@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 import openai
-openai.api_key = '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'
+openai.api_key = st.secrets["API_key"]
 
 def ask_question(question):
     prompt = f"Q: {question}\nA:"
