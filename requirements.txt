@@ -145,7 +145,7 @@ soxr==0.3.4
 SpeechRecognition==3.10.0
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
 statsmodels @ file:///C:/b/abs_bdqo3zaryj/croot/statsmodels_1676646249859/work
-streamlit @ file:///C:/b/abs_fbcea49a7l/croot/streamlit_1673469537084/work
+streamlit==1.20.0
 sympy==1.11.1
 terminado @ file:///C:/b/abs_25nakickad/croot/terminado_1671751845491/work
 threadpoolctl==3.1.0
