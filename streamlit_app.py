@@ -3,6 +3,21 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
+import openai
+openai.api_key = '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'
+
+def ask_question(question):
+    prompt = f"Q: {question}\nA:"
+    response = openai.Completion.create(
+        engine="text-davinci-003", 
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    answer = response.choices[0].text.strip()
+    return answer
 
 # Define the Streamlit app
 def app():
@@ -16,8 +31,9 @@ def app():
     
     # Add a button to update the data
     if st.button("Process Input"):
-        st.write("Input value = " + user_input)
-        st.success("Input value = " + user_input)
+        question = user_input
+        answer = ask_question(question)
+        st.write(answer)
 
 # Run the app
 if __name__ == "__main__":
