@@ -13,6 +13,7 @@ def app():
     
     # Add a button to update the data
     if st.button("Process Input"):
+        st.write("Input value = " + user_input)
         st.success("Input value = " + user_input)
 
 # Run the app
