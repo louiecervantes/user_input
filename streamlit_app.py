@@ -21,16 +21,16 @@ def ask_question(question):
 
 # Define the Streamlit app
 def app():
-    st.header("Welcome to Basic User Input App")
-    st.footer("Louie F. Cervantes M.Eng. \n(c) 2023 WVSU College of ICT")
+    st.header("Welcome to WVSU GPT")
+    st.subheader("Louie F. Cervantes M.Eng. \n(c) 2023 WVSU College of ICT")
     
-    st.title("Read the User Input and Process")
+    st.title("A basic chatbot based on OpenAI GPT-3 engine")
     
     # Get the user input
-    user_input = st.text_input("Enter a value: ")
+    user_input = st.text_input("Inter your question")
     
     # Add a button to update the data
-    if st.button("Process Input"):
+    if st.button("Ask"):
         question = user_input
         answer = ask_question(question)
         st.write(answer)
