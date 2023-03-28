@@ -12,9 +12,8 @@ def app():
     user_input = st.text_input("Enter a value: ")
     
     # Add a button to update the data
-    if st.button("Update Data"):
-        print('Input value = ', user_input)
-        st.success("Data updated!")
+    if st.button("Process Input"):
+        st.success("Input value = " + user_input)
 
 # Run the app
 if __name__ == "__main__":
