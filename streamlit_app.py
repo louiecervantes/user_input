@@ -6,6 +6,9 @@ import altair as alt
 
 # Define the Streamlit app
 def app():
+    st.header("Welcome to Basic User Input App")
+    st.subheader("Louie F. Cervantes \nWVSU College of ICT")
+    
     st.title("Read the User Input and Process")
     
     # Get the user input
