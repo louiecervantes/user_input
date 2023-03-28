@@ -27,7 +27,7 @@ def app():
     st.title("A basic chatbot based on OpenAI GPT-3 engine")
     
     # Get the user input
-    user_input = st.text_input("Inter your question")
+    user_input = st.text_input("Enter your question")
     
     # Add a button to update the data
     if st.button("Ask"):
